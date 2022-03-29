@@ -1,0 +1,307 @@
+#first{
+	background-color: #131720;
+	min-height: auto;
+}
+
+#third{
+	min-height: 100vh;
+}
+
+.font-head{
+font-family: 'Poppins', sans-serif;
+font-size: 36px;
+color: white;
+font-weight: 600px;
+text-transform: uppercase;
+}
+
+.font-section{
+font-family: 'Poppins', sans-serif;
+font-size: 22px;
+color: white;
+text-transform: capitalize;
+}
+
+.font-title{
+font-family: 'Kanit', sans-serif;
+font-size: 18px;
+color: white;
+}
+
+.font-body{
+font-family: 'Indie Flower', cursive;
+font-size: 14px;
+color: white;
+}
+
+#bg{
+	background-image: linear-gradient(180deg,rgb(64 64 64 / 40%) 0%,#131720 100%),url(../img/k.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.img-list-movie{
+	border-radius: 16px;
+	width: 100%;
+	height: 250px;
+}
+
+.color-black{
+	color: black;
+}
+
+.background-color{
+	background-color: #131720;
+}
+
+#detail{
+  min-height: 100vh;
+  background-color: #131720;
+  background-image: linear-gradient(0deg, #131720, #8b8b8500);
+}
+
+.card-detail{
+	border-radius: 16px;
+	border: 1px solid rgba(47,128,237,0.1);
+	padding: 10px;
+	min-height: 300px;
+	width: 100%;
+}
+.card-comment{
+	margin-bottom: 20px;
+    display: block;
+    background-color: #151f30;
+    padding: 20px;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 200px;
+}
+
+.card-send{
+	border-radius: 16px;
+	border: 1px solid rgba(47,128,237,0.1);
+	padding: 20px;
+	min-height: 300px;
+	width: 100%;
+	background-color: #131720;
+}
+
+.form-style{
+	color: white!important;
+	background-color: #151f30!important;
+	border:#151f30!important ;
+}
+
+hr{
+	border: 2px solid rgba(47,128,237,0.1);
+}
+
+body{
+background-color: #131720;
+}
+
+.coursel-title{
+	position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    pointer-events: none;
+}
+
+.coursel-title h2{
+	color: white;
+}
+
+.coursel-title ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.coursel-title ul li{
+	font-size: 14px;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 100%;
+    margin-right: 20px;
+}
+
+.card-coursel{
+	width: 350px;
+	padding: 0px;
+	margin: 0px;
+	height: 250px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.catalog_nav{
+	width: 100%;
+	min-height: 70px;
+	padding: 20px;
+	background-color:#151f30;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+
+.second{
+	min-height: 100vh;
+}
+
+.card{
+	background-color: #131720;
+	border-radius: 16px;
+	border: 0px black solid;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.card-body{
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px;
+}
+
+.card p{
+	color: white;
+}
+
+.card ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card ul li{
+	font-size: 14px;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 100%;
+    margin-right: 20px;
+}
+
+#movie ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#movie ul li{
+	font-size: 14px;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 100%;
+    margin-right: 20px;
+}
+
+.btn-nav{
+	    padding: 5px 10px 5px 10px!important;
+}
+
+.img-movie{
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+
+.img-komentar{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.white{
+	color: white;
+}
+
+p{
+	color: white;
+}
+h1{
+	color: white;
+}
+h2{
+	color: white;
+}
+h3{
+	color: white;
+}
+.mt-10{
+	margin-top: 10px;
+}
+
+.mt-20{
+	margin-top: 20px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.mt-40{
+	margin-top: 40px;
+}
+.mt-50{
+	margin-top: 50px;
+}
+.mt-60{
+	margin-top: 60px;
+}
+.responsif-mt{
+	margin-top: 0px;
+}
+@media (max-width: 768px) {
+.card-coursel{
+	width: 340px;
+	padding: 0px;
+	margin: 0px;
+	height: 230px;
+	background-color: white;
+	border-radius: 20px;
+}
+.catalog_nav{
+	    flex-direction: column;
+	    height: auto;
+	    align-items: flex-start;
+	    justify-content: flex-start;
+}
+
+.img-list-movie{
+	border-radius: 16px;
+	width: 100%;
+	height: 500px;
+}
+
+#first{
+	margin-top: 50px;
+}
+
+.responsif-mt{
+	margin-top: 50px;
+}
+
+}
+
+@media (min-width: 1200px){
+
+}
