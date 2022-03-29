@@ -4,6 +4,7 @@
 	use Request;
 	use DB;
 	use CRUDBooster;
+	use Illuminate\Support\Facades\Storage;
 
 	class AdminDbFilmController extends \crocodicstudio\crudbooster\controllers\CBController {
 
@@ -289,7 +290,8 @@
 	    | @arr
 	    |
 	    */
-	    public function hook_before_add(&$postdata) {        
+	    public function hook_before_add(&$postdata) {      
+			
 	        //Your code here
 			$postdata['id_cms_users']=CRUDBooster::myId();
 
@@ -341,6 +343,13 @@
 	    */
 	    public function hook_before_delete($id) {
 	        //Your code here
+			DB::table('db_film_komentar')->where('id_db_film',$id)->delete();
+			DB::table('db_film_episode')->where('id_db_film',$id)->delete();
+			DB::table('db_link_film')->where('id_db_film',$id)->delete();
+			DB::table('db_film_tag')->where('id_db_film',$id)->delete();
+			$file=DB::table('db_film')->where('id',$id)->first();
+			Storage::delete($file->foto);
+			Storage::delete($file->poster);
 
 	    }
 
