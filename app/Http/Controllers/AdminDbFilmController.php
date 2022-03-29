@@ -270,6 +270,12 @@
 	    */
 	    public function hook_query_index(&$query) {
 	        //Your code here
+			$user=DB::table('cms_users')
+					->where('id',CRUDBooster::myId())
+					->first();
+			if($user->id_cms_privileges==3){
+					$query->where('id_cms_users',$user->id);
+			}
 	            
 	    }
 

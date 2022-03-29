@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit:wght@200&family=Poppins&display=swap" rel="stylesheet">
   
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Vendor CSS Files -->
   <link href="{{url('web/assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{url('web/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -85,9 +85,9 @@
             <h4>Our Social Networks</h4>
             <p>Sosial Media</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="fa fa-twitter">twt</i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook">fb</i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram">ig</i></a>
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
 

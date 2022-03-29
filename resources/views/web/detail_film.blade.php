@@ -20,7 +20,7 @@
               @endphp
               <ul>
                   <li>{{$row->kategori}}</li>
-                  <li>{{$row->rating}}</li>
+                  <li><span class="fa fa-star star">&nbsp;</span>{{$row->rating}}</li>
                   <li>{{$result}}</li>
               </ul>
             </div>

@@ -3,6 +3,10 @@
 	min-height: auto;
 }
 
+.star {
+	color: orange;
+  }
+
 #third{
 	min-height: 100vh;
 }

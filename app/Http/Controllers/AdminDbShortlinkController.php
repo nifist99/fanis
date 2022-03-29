@@ -31,7 +31,7 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Username","name"=>"username"];
-			$this->col[] = ["label"=>"Password","name"=>"password"];
+			$this->col[] = ["label"=>"Sandi","name"=>"sandi_text"];
 			$this->col[] = ["label"=>"Nama Shortlink","name"=>"nama_shortlink"];
 			$this->col[] = ["label"=>"Api","name"=>"api"];
 			$this->col[] = ["label"=>"Url","name"=>"url"];
@@ -40,7 +40,7 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Username','name'=>'username','type'=>'text','validation'=>'required|string|min:1|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Password','name'=>'password','type'=>'text','validation'=>'required|string|min:1|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Sandi','name'=>'sandi_text','type'=>'text','validation'=>'required|string|min:1|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nama Shortlink','name'=>'nama_shortlink','type'=>'text','validation'=>'required|string|min:1|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Api','name'=>'api','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Url','name'=>'url','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
