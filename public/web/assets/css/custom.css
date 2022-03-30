@@ -281,6 +281,11 @@ h3{
 .responsif-mt-slide{
 	margin-top: 20px;
 }
+
+.pengumuman{
+	background-color: rgb(21, 5, 49);
+	padding:10px;
+}
 @media (max-width: 768px) {
 .card-coursel{
 	width: 340px;
@@ -317,6 +322,10 @@ h3{
 
 #first{
 	margin-top: 80px;
+}
+
+.pengumuman{
+	margin-top: 100px;
 }
 
 }

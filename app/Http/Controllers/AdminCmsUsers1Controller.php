@@ -272,7 +272,7 @@
 	    */
 	    public function hook_before_add(&$postdata) {        
 	        //Your code here
-			$postdata['photo']='web/1.png';
+			$postdata['photo']=CRUDBooster::random_image();
 
 	    }
 

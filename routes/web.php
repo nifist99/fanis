@@ -19,6 +19,7 @@ Route::get('detail/{id}','FrontController@detail');
 Route::get('genre','FrontController@genre');
 Route::get('kategori/{nama}','FrontController@kategori');
 Route::get('tag/{id}','FrontController@tag');
+Route::get('forum','FrontController@forum');
 
 Route::post('search','FrontController@search');
 

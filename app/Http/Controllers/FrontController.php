@@ -9,6 +9,7 @@ use Response;
 class FrontController extends Controller
 {
     public function index(){
+        
         $data['kategori']=DB::table('db_kategori')->get();
 
         $data['tag']     =DB::table('db_tag')->get();
@@ -237,5 +238,13 @@ class FrontController extends Controller
         return Response::json($respon);
     }
 
+
+    public function forum(){
+        $data['forum']=DB::table('db_request')
+                    ->orderBy('created_at','desc')
+                    ->paginate(24);
+
+        return view('web.forum',$data);
+    }
 
 }

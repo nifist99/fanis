@@ -49,8 +49,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('genre')}}">Genre</a></li>
+          <li><a class="nav-link scrollto" href="{{url('forum')}}">Forum</a></li>
           <li><a class="nav-link scrollto" href="{{url('admin/login')}}">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,6 +78,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url('/')}}">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url('genre')}}">Genre</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{url('forum')}}">Forum</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url('login')}}">Login</a></li>
             </ul>
           </div>
