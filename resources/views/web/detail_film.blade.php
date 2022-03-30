@@ -69,7 +69,7 @@
               @foreach($komentar_list as $key)
               <div class="card-comment">
                 <div>
-                  <img src="{{url('web/assets/img/profil.png')}}" class="img-komentar">
+                  <img src="{{url(CRUDBooster::random_image())}}" class="img-komentar">
                   <span class="white">{{$key->nama}}</span>
                 </div>
                 <hr>
