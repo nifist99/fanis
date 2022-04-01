@@ -9,7 +9,7 @@ use Response;
 class FrontController extends Controller
 {
     public function index(){
-        
+
         $data['kategori']=DB::table('db_kategori')->get();
 
         $data['tag']     =DB::table('db_tag')->get();
@@ -219,6 +219,7 @@ class FrontController extends Controller
 
         $respon['api_status']='success';
         $respon['api_message']='Request Terkirim';
+        $respon['data'] = $data;
 
         return Response::json($respon);
     }

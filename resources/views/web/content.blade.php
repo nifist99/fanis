@@ -238,6 +238,18 @@ $('#kirim').click(function (e) {
      success: function (respon) {
          if(respon.api_status=='success'){
              $('#kontak').trigger("reset");
+              var post = '<div class="col-md-4 col-sm-12 mt-10">';
+                post +='<div class="card-comment">';
+                post +='<div>';
+                post +='<img src="{{url(CRUDBooster::random_image())}}" class="img-komentar">';
+                post +='<span class="white">&nbsp;'+respon.data.email+'</span>';
+                post +='</div>';
+                post +='<hr>';
+                post +='<div>';
+                post +='<p class="font-body">'+respon.data.content+'</p>';
+                post +=' </div></div></div>';
+                $('#forum-card').append(post);
+
              $('#kirim').html('Kirim');
                  Swal.fire({
                  position: 'center',

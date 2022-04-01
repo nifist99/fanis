@@ -22,6 +22,7 @@
                   <li>{{$row->kategori}}</li>
                   <li><span class="fa fa-star star">&nbsp;</span>{{$row->rating}}</li>
                   <li>{{$result}}</li>
+                  
               </ul>
             </div>
             <div class="mt-20">
@@ -53,6 +54,22 @@
               </ul>
             </div>
           </div>
+
+
+          <div class="col-sm-12 mt-50">
+            <p>Silahkan Share</p>
+              <ul>
+                <div class="fb-like" 
+                data-href="{{url('detail/'.$id)}}" 
+                data-width=""
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small"  
+                data-share="true">
+                </div>
+              </ul>
+          </div>
+
         </div>
       </div>
       
@@ -171,7 +188,27 @@
    </section>
   </main>
 
+  <div id="fb-root"></div>
+  
   @push('js')
+
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0&appId=540457940831032";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
+    <script async defer crossorigin="anonymous" 
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+               &version=v13.0
+               &appId=540457940831032
+               &autoLogAppEvents=1" 
+          nonce="FOKrbAYI">
+    </script>
+  
 <script>
   $(function () {
 

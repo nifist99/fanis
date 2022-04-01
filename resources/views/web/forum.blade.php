@@ -12,22 +12,22 @@
    <!--  section detail -->
    <section id="detail">
      <div class="container mt-50">
-       <div class="row">
+       <div class="row" id="forum-card">
            <p class="font-section">Forum</p>
             <hr>
               @foreach($forum as $key)
-            <div class="col-md-4 col-sm-12 mt-10">
-                <div class="card-comment">
-                    <div>
-                      <img src="{{url(CRUDBooster::random_image())}}" class="img-komentar">
-                      <span class="white">{{$key->email}}</span>
+                <div class="col-md-4 col-sm-12 mt-10">
+                    <div class="card-comment">
+                        <div>
+                        <img src="{{url(CRUDBooster::random_image())}}" class="img-komentar">
+                        <span class="white">{{$key->email}}</span>
+                        </div>
+                        <hr>
+                        <div>
+                        <p class="font-body">{{$key->content}}</p>
+                        </div>      
                     </div>
-                    <hr>
-                    <div>
-                      <p class="font-body">{{$key->content}}</p>
-                    </div>      
-                  </div>
-            </div>
+                </div>
             @endforeach
             <div class="mt-50">
                 {{ $forum->onEachSide(5)->links() }}
